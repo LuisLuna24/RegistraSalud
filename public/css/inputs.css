@@ -1,0 +1,27 @@
+/* Modo claro */
+@media (prefers-color-scheme: light) {
+    input[type="date"]::-webkit-calendar-picker-indicator {
+        filter: invert(0); /* Icono en negro */
+        cursor: pointer;
+    }
+}
+
+/* Modo oscuro */
+@media (prefers-color-scheme: dark) {
+    input[type="date"]::-webkit-calendar-picker-indicator {
+        filter: invert(1); /* Icono en blanco */
+        cursor: pointer;
+    }
+}
+
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Para Firefox */
+input[type="number"] {
+    -moz-appearance: textfield;
+}
